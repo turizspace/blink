@@ -7,6 +7,8 @@ packages:
   - apps/pay
   - apps/map
   - apps/voucher
+  - apps/shopify-blink
+  - apps/shopify-blink/extensions/checkout-ui
   - bats/helpers/callback
   - bats/helpers/subscriber
   - bats/helpers/totp

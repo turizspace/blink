@@ -1,0 +1,27 @@
+name = "blink-payment-button"
+type = "checkout_ui_extension"
+api_version = "2024-01"
+
+extension_points = [
+  "Checkout::PaymentMethod::Render"
+]
+
+[capabilities.payment_method]
+accepts_external_payments = true
+accepts_manual_payments = true
+iframe_support = false
+requires_shipping = false
+tokenize_payment = false
+
+[runtime_context]
+content_security_policy = true
+
+[capabilities]
+api_access = true
+network_access = true
+
+[settings]
+type = "payment_method"
+name = "Bitcoin Payment"
+visible = true
+payment_method_id = "blink-bitcoin"

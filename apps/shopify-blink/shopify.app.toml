@@ -1,0 +1,17 @@
+name = "blinkify"
+scopes = "write_products,read_orders,write_orders,read_payment_terms,write_payment_terms"
+application_url = "https://polar-sn-attending-elect.trycloudflare.com"
+
+[access_scopes]
+use_legacy_install_flow = true
+
+[auth]
+redirect_urls = [
+  "https://polar-sn-attending-elect.trycloudflare.com/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
+
+[extension_directories]
+checkout_ui = "extensions/checkout-ui"
